@@ -1,7 +1,6 @@
 "use client";
 
 import { Home2 } from "solar-icon-set/essentionalui";
-import { PhoneCallingRounded } from "solar-icon-set/call";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -46,7 +45,7 @@ export const VendorCard = ({ item }) => {
 
   return (
     <div className="h-full">
-      <div className="bg-indigo-600 p-4 rounded-lg shadow-md flex flex-col h-full">
+      <div className="bg-indigo-600 p-4 rounded-lg shadow-md space-y-3 flex flex-col h-full">
         <div className="text-xl font-bold text-white mb-2 truncate tracking-tight space-x-3">
           <span>
             <Home2 />
@@ -56,6 +55,9 @@ export const VendorCard = ({ item }) => {
         <div className="text-white mb-2 truncate">{item.address}</div>
         <div className="text-white truncate">
           <div className="">{item.contact}</div>
+        </div>
+        <div className="bg-gradient-to-r from-cyan-500  via-blue-600-600 to-emerald-500 text-white border border-indigo-600 font-extrabold  px-3 py-1 mt-3 rounded-lg w-fit">
+          {item.type}
         </div>
         <div className="flex justify-end space-x-3 mt-4">
           <button
@@ -110,6 +112,17 @@ export const VendorCard = ({ item }) => {
                 className="w-full p-2 mb-2 border rounded text-white"
                 placeholder="Contact"
               />
+              <select
+                name="type"
+                value={editedItem.type}
+                onChange={handleInputChange}
+                className="w-full p-2 mb-2 border rounded text-white"
+              >
+                <option value="Screening Venue">Screening Venue</option>
+                <option value="Catering Services">Catering Services</option>
+                <option value="Event Organizer">Event Organizer</option>
+                <option value="Production House">Production House</option>
+              </select>
               <div className="flex justify-end space-x-2">
                 <button
                   type="button"

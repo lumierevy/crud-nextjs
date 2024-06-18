@@ -1,7 +1,6 @@
 import { AddVendorForm } from "@/components/AddVendorForm";
 import { Header } from "@/components/Header";
 import { VendorCard } from "@/components/VendorCard";
-import { VendorForm } from "@/components/VendorForm";
 
 export default async function Home() {
   const res = await fetch("https://v1.appbackend.io/v1/rows/QtnFeQNT1elQ", {
@@ -15,7 +14,7 @@ export default async function Home() {
 
       <div className="p-12 flex justify-between">
         <h1 className="text-4xl">
-          Vendor List for Indonesia Film Festival 2024
+          Vendor Contact for Indonesia Film Festival 2024
         </h1>
         <AddVendorForm />
       </div>

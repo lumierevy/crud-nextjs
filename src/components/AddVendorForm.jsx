@@ -69,6 +69,20 @@ export const AddVendorForm = () => {
                 placeholder="Anna Brown, +556778899, anna.brown@reeldeal.com"
                 className="w-full p-2 mb-2 border rounded-lg text-white"
               />
+              <select
+                name="type"
+                onChange={handleInputAddVendorChange}
+                className="w-full p-2 mb-2 border rounded-lg text-white"
+              >
+                <option value="" disabled selected>
+                  Select Vendor Type
+                </option>
+                <option value="Screening Venue">Screening Venue</option>
+                <option value="Catering Services">Catering Services</option>
+                <option value="Event Organizer">Event Organizer</option>
+                <option value="Production House">Production House</option>
+              </select>
+
               <div className="flex justify-end space-x-2">
                 <button
                   type="button"

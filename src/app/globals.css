@@ -4,7 +4,8 @@
 
 @layer base {
   input,
-  textarea {
+  textarea,
+  select {
     @apply border-2 w-full block  p-2 rounded-md bg-slate-800;
   }
 }

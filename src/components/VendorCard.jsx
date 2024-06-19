@@ -82,7 +82,7 @@ export const VendorCard = ({ item }) => {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="bg-slate-800 p-6 rounded-lg w-[530px]"
+            className="bg-slate-800 p-6 rounded-lg lg:w-[530px]"
           >
             <h2 className="text-xl font-bold mb-4 text-indigo-600">
               Edit Vendor

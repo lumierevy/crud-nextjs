@@ -31,7 +31,7 @@ export const AddVendorForm = () => {
     <div>
       <button
         onClick={() => setIsAddVendor(true)}
-        className="bg-indigo-500 px-3 py-2 rounded-xl h-10 "
+        className="bg-indigo-500 hover:bg-indigo-600 px-3 py-2 rounded-xl h-10 truncate text-sm md:text-xl "
       >
         + Add Vendor
       </button>
@@ -42,7 +42,7 @@ export const AddVendorForm = () => {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="bg-slate-800 p-6 rounded-lg w-[530px]"
+            className="bg-slate-800 p-6 rounded-lg lg:w-[530px]"
           >
             <h2 className="text-xl font-bold mb-4 text-indigo-600">
               Add Vendor

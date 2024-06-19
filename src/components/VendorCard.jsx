@@ -51,7 +51,7 @@ export const VendorCard = ({ item }) => {
           backgroundImage: `url(/abstrak.png)`,
         }}
       >
-        <div className="text-xl font-bold text-white mb-2 truncate tracking-tight space-x-3">
+        <div className="text-2xl font-semibold text-white mb-2 truncate tracking-tight space-x-3">
           <span>
             <Home2 />
           </span>{" "}
@@ -61,7 +61,7 @@ export const VendorCard = ({ item }) => {
         <div className="text-white truncate">
           <div className="">{item.contact}</div>
         </div>
-        <div className="bg-gradient-to-r from-cyan-500  via-blue-600-600 to-emerald-500 text-white border border-indigo-600 font-extrabold  px-3 py-1 mt-3 rounded-lg w-fit">
+        <div className="bg-gradient-to-r from-cyan-500  via-blue-600-600 to-emerald-500 text-white px-3 py-1 mt-3 rounded-lg w-fit">
           {item.type}
         </div>
         <div className="flex justify-end space-x-3 mt-4">
@@ -73,7 +73,7 @@ export const VendorCard = ({ item }) => {
           </button>
           <button
             onClick={handleDeleteVendor}
-            className="bg-white rounded-lg border text-indigo-600 px-3 py-1"
+            className="bg-white rounded-lg border text-slate-900 px-3 py-1"
           >
             Delete
           </button>
@@ -89,7 +89,7 @@ export const VendorCard = ({ item }) => {
             onClick={(e) => e.stopPropagation()}
             className="bg-slate-800 p-6 rounded-lg lg:w-[530px]"
           >
-            <h2 className="text-xl font-bold mb-4 text-indigo-600">
+            <h2 className="text-xl font-bold mb-4 bg-clip-text bg-gradient-to-r from-cyan-500  via-blue-600-600 to-emerald-500 text-transparent">
               Edit Vendor
             </h2>
             <form onSubmit={handleEditVendor}>
@@ -138,7 +138,7 @@ export const VendorCard = ({ item }) => {
                 </button>
                 <button
                   type="submit"
-                  className="px-4 py-2 bg-indigo-600 text-white rounded"
+                  className="px-4 py-2 bg-gradient-to-r from-cyan-500  via-blue-600-600 to-emerald-500 text-white rounded"
                 >
                   Save
                 </button>

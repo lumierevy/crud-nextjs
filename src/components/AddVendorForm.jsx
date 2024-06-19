@@ -47,7 +47,7 @@ export const AddVendorForm = () => {
             onClick={(e) => e.stopPropagation()}
             className="bg-slate-800 p-6 rounded-lg lg:w-[530px]"
           >
-            <h2 className="text-xl font-bold mb-4 text-indigo-600">
+            <h2 className="text-xl font-bold mb-4 bg-clip-text bg-gradient-to-r from-cyan-500  via-blue-600-600 to-emerald-500 text-transparent">
               Add Vendor
             </h2>
             <form onSubmit={handleAddVendor}>
@@ -96,7 +96,7 @@ export const AddVendorForm = () => {
                 </button>
                 <button
                   type="submit"
-                  className="px-4 py-2 bg-indigo-600 text-white rounded"
+                  className="px-4 py-2 bg-gradient-to-r from-cyan-500  via-blue-600-600 to-emerald-500  text-white rounded"
                 >
                   Save
                 </button>

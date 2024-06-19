@@ -31,7 +31,10 @@ export const AddVendorForm = () => {
     <div>
       <button
         onClick={() => setIsAddVendor(true)}
-        className="bg-indigo-500 hover:bg-indigo-600 px-3 py-2 rounded-xl h-10 truncate text-sm md:text-xl "
+        className=" hover:bg-indigo-600 px-3 py-2 rounded-xl h-10 truncate text-sm md:text-xl"
+        style={{
+          backgroundImage: `url(/abstrak.png)`,
+        }}
       >
         + Add Vendor
       </button>

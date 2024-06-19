@@ -45,7 +45,12 @@ export const VendorCard = ({ item }) => {
 
   return (
     <div className="h-full">
-      <div className="bg-indigo-600 p-4 rounded-lg shadow-md space-y-3 flex flex-col h-full">
+      <div
+        className="p-4 rounded-lg shadow-md space-y-3 flex flex-col h-full object-cover"
+        style={{
+          backgroundImage: `url(/abstrak.png)`,
+        }}
+      >
         <div className="text-xl font-bold text-white mb-2 truncate tracking-tight space-x-3">
           <span>
             <Home2 />
